@@ -1,0 +1,15 @@
+.link01:link {
+    color: red;
+}
+
+.link02:visited {
+    color: pink;
+}
+
+.link03:hover {
+    color: orange;
+}
+
+.link04:active {
+    color: maroon;
+}
