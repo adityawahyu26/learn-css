@@ -1,0 +1,35 @@
+.p1 {
+    background-color: cadetblue;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    overflow: auto;
+    padding: 20px;
+}
+
+.p2 {
+    background-color: darkorchid;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: scroll;
+    padding: 20px;
+}
+
+.p3 {
+    background-color: lightblue;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.p4 {
+    background-color: palevioletred;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: visible;
+    padding: 20px;
+}
