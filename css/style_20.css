@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(220, 20, 60, 0.637);
+}
+
+.container {
+    background-color: crimson;
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.welcome {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+input {
+    margin-left: 5px;
+}
