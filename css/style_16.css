@@ -1,0 +1,13 @@
+body {
+    background-image: url(../image/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: block;
+}
