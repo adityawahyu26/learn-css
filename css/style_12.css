@@ -1,0 +1,16 @@
+.container {
+    background-color: aqua;
+    width: 250px;
+    height: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    background-color: white;
+    color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px auto;
+}
