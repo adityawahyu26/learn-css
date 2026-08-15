@@ -1,0 +1,13 @@
+.r1 {
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+}
+
+.r2 {
+    border: 3px dashed blue;
+}
+
+.r3 {
+    border: 4px dotted yellow;
+}
