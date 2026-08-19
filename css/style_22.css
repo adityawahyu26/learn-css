@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin: 200px auto;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+h3 {
+    color: red;
+    margin-bottom: 40px;
+}
+
+label {
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    display: block;
+    color: red;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 50%;
+    padding: 8px;
+    margin-left: 25%;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: red;
+    background-color: black;
+    border: none;
+}
