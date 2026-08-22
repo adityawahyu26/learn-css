@@ -1,0 +1,118 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #848ccf;
+    margin-bottom: 50px;
+}
+
+/* Wadah Utama */
+.demo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card-demo {
+    background: #16213e;
+    padding: 40px 20px;
+    border-radius: 15px;
+    border: 1px solid #0f3460;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* ==========================================
+   CONTOH 1: TRANSISI TOMBOL (Warna & Skala)
+   ========================================== */
+.btn-modern {
+    padding: 12px 28px;
+    background-color: #0f3460;
+    color: white;
+    border: 2px solid #e94560;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    /* KUNCI: Mentransisikan semua perubahan properti selama 0.3 detik */
+    transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+    background-color: #e94560;
+    /* Berubah warna background */
+    transform: scale(1.1);
+    /* Berubah ukuran melalui transform */
+    box-shadow: 0 0 15px #e94560;
+    /* Menambahkan kilauan bayangan */
+}
+
+/* ==========================================
+   CONTOH 2: EFEK MEMBAL (Cubic-Bezier)
+   ========================================== */
+.circle-bounce {
+    width: 70px;
+    height: 70px;
+    background-color: #00fff5;
+    border-radius: 50%;
+    /* KUNCI: cubic-bezier ini memberikan efek dorongan membal di akhir gerakan */
+    transition: transform 0.5s cubic-bezier(0.68, -0.65, 0.265, 1.55);
+}
+
+.card-demo:hover .circle-bounce {
+    transform: translateY(-30px);
+}
+
+/* ==========================================
+   CONTOH 3: TRANSISI BERTAHAP (Menggunakan Delay)
+   ========================================== */
+.box-delay {
+    width: 150px;
+    height: 60px;
+    background-color: #3f37c9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Transisi untuk kotaknya sendiri */
+    transition: transform 0.4s ease;
+}
+
+.text-hidden {
+    opacity: 0;
+    font-weight: bold;
+    /* KUNCI: Teks baru muncul setelah menunggu delay 0.3 detik */
+    transition: opacity 0.4s ease 0.3s;
+}
+
+/* Saat kartu disentuh kursor */
+.card-demo:hover .box-delay {
+    transform: scaleX(1.2);
+    /* Kotak melebar duluan */
+}
+
+.card-demo:hover .text-hidden {
+    opacity: 1;
+    /* Teks baru muncul menyusul */
+}
