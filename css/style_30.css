@@ -1,0 +1,136 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0c10;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    color: #66fcf1;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #c5a059;
+    margin-bottom: 50px;
+}
+
+/* Wadah Kartu */
+.animation-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card-anim {
+    background: #1f2833;
+    padding: 40px 20px;
+    border-radius: 15px;
+    border: 1px solid #45f3ff33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-height: 250px;
+}
+
+/* ==========================================
+   CONTOH 1: ELEMEN MELAYANG (FLOATING)
+   ========================================== */
+.avatar-float {
+    font-size: 3.5rem;
+    /* Panggil animasi 'melayang', durasi 2 detik, berulang selamanya, bolak-balik (yoyo) */
+    animation: melayang 2s ease-in-out infinite alternate;
+}
+
+@keyframes melayang {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+        /* Bergerak ke atas */
+    }
+}
+
+/* ==========================================
+   CONTOH 2: LOADING SPINNER
+   ========================================== */
+.spinner-load {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #1f2833;
+    border-top: 6px solid #66fcf1;
+    /* Warna pembeda di atas */
+    border-radius: 50%;
+    /* Panggil animasi 'berputar', ritme rata (linear), berulang selamanya */
+    animation: berputar 1s linear infinite;
+}
+
+@keyframes berputar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+    /* Berputar satu lingkaran penuh */
+}
+
+/* ==========================================
+   CONTOH 3: EFEK MENGETIK (TYPING)
+   ========================================== */
+.typing-container {
+    display: inline-block;
+}
+
+.typing-text {
+    font-family: monospace;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #66fcf1;
+    /* Berfungsi sebagai kursor ketik */
+    width: 0;
+    /* Menjalankan dua animasi sekaligus dipisah koma */
+    animation: ketik 3s steps(19) infinite alternate,
+        kedipKursor 0.75s step-end infinite;
+}
+
+/* Animasi menarik lebar teks dari 0 ke lebar penuh */
+@keyframes ketik {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Animasi membuat kursor berkedip hilang-muncul */
+@keyframes kedipKursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #66fcf1;
+    }
+}
