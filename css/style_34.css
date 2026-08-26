@@ -1,0 +1,23 @@
+.fab {
+    color: grey;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: magenta;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-x:hover {
+    color: purple;
+}
+
+.fa-telegram:hover {
+    color: aqua;
+}
