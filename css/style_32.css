@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+.box-8 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: cadetblue;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
