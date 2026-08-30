@@ -1,0 +1,24 @@
+:root {
+    --var-merah: red;
+    --var-biru: blue;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid var(--var-biru);
+}
+
+.container h3 {
+    color: var(--var-merah);
+}
+
+.container p {
+    color: var(--var-biru);
+}
+
+.container p span {
+    background-color: var(--var-merah);
+}
