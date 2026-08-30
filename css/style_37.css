@@ -1,0 +1,26 @@
+/* untuk smartphone */
+@media only screen and (max-width: 498px) {
+    .container {
+        width: 100%;
+        height: 200px;
+        background-color: red;
+    }
+}
+
+/* untuk ipad */
+@media only screen and (min-width: 499px) {
+    .container {
+        width: 100%;
+        height: 200px;
+        background-color: blue;
+    }
+}
+
+/* untuk desktop */
+@media only screen and (min-width: 767px) {
+    .container {
+        width: 100%;
+        height: 200px;
+        background-color: yellow;
+    }
+}
