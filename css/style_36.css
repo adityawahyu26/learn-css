@@ -1,0 +1,15 @@
+.header {
+    color: red;
+}
+
+.header span {
+    color: blue;
+}
+
+.footer {
+    color: blue;
+}
+
+.footer span {
+    color: red;
+}
