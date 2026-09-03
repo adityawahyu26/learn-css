@@ -1,0 +1,7 @@
+ol {
+    list-style: decimal-leading-zero;
+}
+
+ul {
+    list-style: square;
+}
