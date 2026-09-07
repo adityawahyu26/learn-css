@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.container {
+    width: 60%;
+    padding: 30px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 5px;
+    color: cadetblue;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-size: 14px;
+}
+
+fieldset {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: cadetblue 1px solid;
+}
+
+fieldset p {
+    width: 49%;
+    margin: 10px 0;
+}
+
+fieldset input,
+textarea,
+select {
+    width: 49%;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+    color: cadetblue;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: cadetblue;
+}
+
+input[type=radio] {
+    accent-color: cadetblue;
+}
+
+input[type=file] {
+    background-color: cadetblue;
+    color: white;
+    border: none;
+}
+
+.jk {
+    width: 49%;
+    padding: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.j {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.j input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.j span {
+    white-space: nowrap;
+}
+
+button {
+    width: 25%;
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
